@@ -1,12 +1,12 @@
 program impactTCsinformation
 implicit none
 integer line
-parameter(line=19138) !!!!!!!!!!!!数据文件行数
+parameter(line=19138) 
 integer i,j,m,constant1(line),yr(line),k(line),n(line),yr1(line),mon1(line),dy1(line),t(line),pp(line),wd(line),mm(line),number(line),constant2(line)
 real lat(line),lon(line)
 
-open(11,file='huanan1980-2022.txt',status='old') !!!!!!!!!!!!修改
-open(12,file='track_INF_huanan1980-2022-656.TXT',status='new',position='append') !!!!!!!!!!!!修改
+open(11,file='huanan1980-2022.txt',status='old') 
+open(12,file='track_INF_huanan1980-2022-656.TXT',status='new',position='append') 
 
 
 do m=1,line
